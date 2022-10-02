@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+
+int main () {
+	ll n;
+	double fahren[10006], reamur[10006], celcius[10006], kelvin[10006];
+	cout << "Program ini akan mengkonversi celcius ke satuan suhu lainnya" << endl;
+	cout << "Berapa kali anda ingin mengkonversi?" << endl;
+	cin >> n;
+	for (ll i = 1;i<=n;i++) {
+		cout << "Masukkan input suhu celcius awal: ";
+		cin >> celcius[i];
+		kelvin[i] = celcius[i] + 273;
+		fahren[i] = celcius[i] * 1.8 + 32;
+		reamur[i] = celcius[i] * 0.8;
+		cout << "Suhu dalam Kelvin adalah " << kelvin[i] << endl;
+		cout << "Suhu dalam Fahrenheit adalah " << fahren[i] << endl;
+		cout << "Suhu dalam Reamur adalah " << reamur[i] << endl;
+		cout << endl;
+	}
+}
